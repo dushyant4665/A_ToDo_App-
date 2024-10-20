@@ -55,7 +55,7 @@ const Register = () => {
           Register
         </h2>
         
-        {/* Registration Form */}
+        
         <form onSubmit={handleSubmit}>
           <div className="mb-6 group">
             <label className="block text-gray-700 font-medium mb-2">
@@ -93,7 +93,6 @@ const Register = () => {
             />
           </div>
 
-          {/* HCaptcha */}
           <div className="mb-8 flex justify-center">
             <HCaptcha
               sitekey={process.env.REACT_APP_HCAPTCHA_SITE_KEY}
@@ -101,7 +100,7 @@ const Register = () => {
             />
           </div>
 
-          {/* Submit Button */}
+     
           <button
             type="submit"
             className="w-full bg-indigo-500 text-white py-3 px-4 rounded-lg hover:bg-indigo-600 transition duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50 shadow-lg"
@@ -109,10 +108,10 @@ const Register = () => {
             Submit
           </button>
 
-          {/* Error Message */}
+     
           {error && <p className="text-red-500 text-center mt-4">{error}</p>}
           
-          {/* Success Message */}
+         
           {success && (
             <p className="text-green-500 text-center mt-4">
               Registration successful!
