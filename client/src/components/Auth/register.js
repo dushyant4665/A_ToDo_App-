@@ -45,7 +45,7 @@ const Register = () => {
     setCaptchaValue(value);
   };
 
-  console.log('HCAPTCHA_SITE_KEY:', process.env.REACT_APP_HCAPTCHA_SITE_KEY);
+  console.log('HCAPTCHA_SITE_KEY:', process.env.HCAPTCHA_SITE_KEY);
 
 
   return (
