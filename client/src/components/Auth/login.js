@@ -69,7 +69,6 @@ const Login = () => {
       Welcome Back
     </h2>
 
-    {/* Success Message */}
     {success && (
       <div
         className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg mb-6 shadow-md"
@@ -79,7 +78,7 @@ const Login = () => {
       </div>
     )}
 
-    {/* Error Message */}
+
     {error && (
       <div
         className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg mb-6 shadow-md"
@@ -89,7 +88,7 @@ const Login = () => {
       </div>
     )}
 
-    {/* Login Form */}
+ 
     <form onSubmit={handleSubmit}>
       <div className="mb-6">
         <label
@@ -127,7 +126,7 @@ const Login = () => {
         />
       </div>
 
-      {/* HCaptcha */}
+    
       <div className="mb-6 flex justify-center">
         <HCaptcha
           sitekey="458a23e0-c63a-45a0-baa6-dc4abe4ef920"
@@ -135,7 +134,6 @@ const Login = () => {
         />
       </div>
 
-      {/* Submit Button */}
       <button
         type="submit"
         className={`w-full bg-indigo-500 text-white py-3 px-4 rounded-lg hover:bg-indigo-600 transition duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50 shadow-lg ${
